@@ -11,3 +11,8 @@ export const addTodo = text => ({
     id: todo_id++,
     text
 })
+
+export const handleClick = id => ({
+    type: "TOGGLE_TODO", 
+    id
+  })
